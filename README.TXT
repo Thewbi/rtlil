@@ -35,6 +35,9 @@ write_verilog synth.v
 https://github.com/nkkav/yosys-examples/blob/master/adder/show_rtl.ys
 
 
+# start yosys on the command line to enter it's command line interface
+yosys
+
 # read design
 read_verilog adder.v
 hierarchy -check
@@ -45,6 +48,10 @@ proc; opt; memory; opt; fsm; opt
 # show
 #show
 show -format dot -prefix ./adder_rtl
+
+dump -o ./adder.rtlil
+
+show -colors 2
 
 
 
@@ -61,6 +68,10 @@ proc; opt; memory; opt; fsm; opt
 # show
 #show
 show -format dot -prefix ./des_rtl
+
+dump -o ./des.rtlil
+
+show -colors 2
 
 
 

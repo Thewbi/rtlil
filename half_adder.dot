@@ -1,0 +1,17 @@
+digraph "half_adder" {
+label="half_adder";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="i_bit1", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="i_bit2", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="o_carry", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="o_sum", color="black", fontcolor="black" ];
+c8 [ shape=record, label="{{<p5> A|<p6> B}|$2\n$and|{<p7> Y}}" ];
+c9 [ shape=record, label="{{<p5> A|<p6> B}|$1\n$xor|{<p7> Y}}" ];
+n1:e -> c8:p5:w [color="black", label=""];
+n1:e -> c9:p5:w [color="black", label=""];
+n2:e -> c8:p6:w [color="black", label=""];
+n2:e -> c9:p6:w [color="black", label=""];
+c8:p7:e -> n3:w [color="black", label=""];
+c9:p7:e -> n4:w [color="black", label=""];
+}

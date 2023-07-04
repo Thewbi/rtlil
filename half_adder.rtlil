@@ -1,0 +1,42 @@
+
+autoidx 3
+
+attribute \src "half_adder.v:4.1-20.10"
+module \half_adder
+
+  attribute \src "half_adder.v:12.10-12.16"
+  wire input 1 \i_bit1
+
+  attribute \src "half_adder.v:13.10-13.16"
+  wire input 2 \i_bit2
+
+  attribute \src "half_adder.v:15.10-15.17"
+  wire output 4 \o_carry
+
+  attribute \src "half_adder.v:14.10-14.15"
+  wire output 3 \o_sum
+
+  attribute \src "half_adder.v:18.20-18.35"
+  cell $and $and$half_adder.v:18$2
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A \i_bit1
+    connect \B \i_bit2
+    connect \Y \o_carry
+  end
+
+  attribute \src "half_adder.v:17.20-17.35"
+  cell $xor $xor$half_adder.v:17$1
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A \i_bit1
+    connect \B \i_bit2
+    connect \Y \o_sum
+  end
+end
