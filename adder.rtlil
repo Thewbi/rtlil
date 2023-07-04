@@ -1,0 +1,27 @@
+
+autoidx 2
+
+attribute \src "adder.v:6.1-9.10"
+module \adder
+
+  attribute \src "adder.v:6.32-6.33"
+  wire width 32 input 1 \a
+
+  attribute \src "adder.v:6.34-6.35"
+  wire width 32 input 2 \b
+
+  attribute \src "adder.v:7.33-7.34"
+  wire width 32 output 3 \y
+
+  attribute \src "adder.v:8.16-8.21"
+  cell $add $add$adder.v:8$1
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 32
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 32
+    parameter \Y_WIDTH 32
+    connect \A \a
+    connect \B \b
+    connect \Y \y
+  end
+end

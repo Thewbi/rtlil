@@ -1,0 +1,104 @@
+
+autoidx 15
+
+attribute \dynports 1
+attribute \src "clock_divider.v:21.1-53.10"
+module \clock_divider
+
+  parameter \COUNT_WIDTH 24
+  parameter \MAX_COUNT 25'0010110111000110101111111
+
+  attribute \src "clock_divider.v:41.5-51.8"
+  wire width 25 $0\count[24:0]
+
+  attribute \src "clock_divider.v:49.22-49.31"
+  attribute \unused_bits "25 26 27 28 29 30 31"
+  wire width 32 $add$clock_divider.v:49$5_Y
+
+  attribute \src "clock_divider.v:45.22-45.40"
+  wire $eq$clock_divider.v:45$3_Y
+
+  attribute \src "clock_divider.v:47.20-47.24"
+  wire $not$clock_divider.v:47$4_Y
+
+  attribute \src "clock_divider.v:24.17-24.20"
+  wire input 1 \clk
+
+  attribute \src "clock_divider.v:38.25-38.30"
+  wire width 25 \count
+
+  attribute \src "clock_divider.v:28.17-28.20"
+  wire output 3 \out
+
+  attribute \src "clock_divider.v:25.17-25.20"
+  wire input 2 \rst
+
+  attribute \src "clock_divider.v:49.22-49.31"
+  cell $add $add$clock_divider.v:49$5
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 25
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 32
+    parameter \Y_WIDTH 32
+    connect \A \count
+    connect \B 1
+    connect \Y $add$clock_divider.v:49$5_Y
+  end
+
+  attribute \src "clock_divider.v:41.5-51.8"
+  cell $adffe $auto$ff.cc:262:slice$14
+    parameter \ARST_POLARITY 1
+    parameter \ARST_VALUE 1'0
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 1
+    connect \ARST \rst
+    connect \CLK \clk
+    connect \D $not$clock_divider.v:47$4_Y
+    connect \EN $eq$clock_divider.v:45$3_Y
+    connect \Q \out
+  end
+
+  attribute \src "clock_divider.v:45.22-45.40"
+  cell $eq $eq$clock_divider.v:45$3
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 25
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 25
+    parameter \Y_WIDTH 1
+    connect \A \count
+    connect \B 25'0010110111000110101111111
+    connect \Y $eq$clock_divider.v:45$3_Y
+  end
+
+  attribute \src "clock_divider.v:47.20-47.24"
+  cell $not $not$clock_divider.v:47$4
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A \out
+    connect \Y $not$clock_divider.v:47$4_Y
+  end
+
+  attribute \src "clock_divider.v:41.5-51.8"
+  cell $adff $procdff$13
+    parameter \ARST_POLARITY 1'1
+    parameter \ARST_VALUE 25'0000000000000000000000000
+    parameter \CLK_POLARITY 1'1
+    parameter \WIDTH 25
+    connect \ARST \rst
+    connect \CLK \clk
+    connect \D $0\count[24:0]
+    connect \Q \count
+  end
+
+  attribute \full_case 1
+  attribute \src "clock_divider.v:45.22-45.40|clock_divider.v:45.18-50.12"
+  cell $mux $procmux$7
+    parameter \WIDTH 25
+    connect \A $add$clock_divider.v:49$5_Y [24:0]
+    connect \B 25'0000000000000000000000000
+    connect \S $eq$clock_divider.v:45$3_Y
+    connect \Y $0\count[24:0]
+  end
+end

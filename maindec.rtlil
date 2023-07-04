@@ -1,0 +1,143 @@
+
+autoidx 10
+
+attribute \src "maindec.v:6.1-28.10"
+module \maindec
+
+  wire $procmux$4_CMP
+
+  wire $procmux$5_CMP
+
+  wire $procmux$6_CMP
+
+  wire $procmux$7_CMP
+
+  wire $procmux$8_CMP
+
+  wire $procmux$9_CMP
+
+  attribute \src "maindec.v:11.39-11.44"
+  wire width 2 output 9 \aluop
+
+  attribute \src "maindec.v:8.47-8.53"
+  wire output 5 \alusrc
+
+  attribute \src "maindec.v:8.39-8.45"
+  wire output 4 \branch
+
+  attribute \src "maindec.v:13.15-13.23"
+  wire width 9 \controls
+
+  attribute \src "maindec.v:10.39-10.43"
+  wire output 8 \jump
+
+  attribute \src "maindec.v:7.39-7.47"
+  wire output 2 \memtoreg
+
+  attribute \src "maindec.v:7.49-7.57"
+  wire output 3 \memwrite
+
+  attribute \src "maindec.v:6.39-6.41"
+  wire width 6 input 1 \op
+
+  attribute \src "maindec.v:9.39-9.45"
+  wire output 6 \regdst
+
+  attribute \src "maindec.v:9.47-9.55"
+  wire output 7 \regwrite
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $pmux $procmux$3
+    parameter \S_WIDTH 6
+    parameter \WIDTH 9
+    connect \A 9'x
+    connect \B 54'110000010101001000001010000000100001101000000000000100
+    connect \S { $procmux$9_CMP $procmux$8_CMP $procmux$7_CMP $procmux$6_CMP $procmux$5_CMP $procmux$4_CMP }
+    connect \Y \controls
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $eq $procmux$4_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \B 6'000010
+    connect \Y $procmux$4_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $eq $procmux$5_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \B 6'001000
+    connect \Y $procmux$5_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $eq $procmux$6_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \B 6'000100
+    connect \Y $procmux$6_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $eq $procmux$7_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \B 6'101011
+    connect \Y $procmux$7_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $eq $procmux$8_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \B 6'100011
+    connect \Y $procmux$8_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $logic_not $procmux$9_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \Y $procmux$9_CMP
+  end
+
+  connect \aluop \controls [1:0]
+  connect \alusrc \controls [6]
+  connect \branch \controls [5]
+  connect \jump \controls [2]
+  connect \memtoreg \controls [3]
+  connect \memwrite \controls [4]
+  connect \regdst \controls [7]
+  connect \regwrite \controls [8]
+end

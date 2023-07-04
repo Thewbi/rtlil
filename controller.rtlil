@@ -1,0 +1,359 @@
+
+autoidx 23
+
+attribute \src "aludec.v:8.1-25.10"
+module \aludec
+
+  wire width 3 $procmux$13_Y
+
+  wire $procmux$14_CMP
+
+  wire $procmux$15_CMP
+
+  wire $procmux$16_CMP
+
+  wire $procmux$17_CMP
+
+  wire $procmux$18_CMP
+
+  wire $procmux$21_CMP
+
+  wire $procmux$22_CMP
+
+  attribute \src "aludec.v:10.33-10.43"
+  wire width 3 output 3 \alucontrol
+
+  attribute \src "aludec.v:9.32-9.37"
+  wire width 2 input 2 \aluop
+
+  attribute \src "aludec.v:8.32-8.37"
+  wire width 6 input 1 \funct
+
+  attribute \full_case 1
+  attribute \src "aludec.v:0.0-0.0|aludec.v:16.16-23.16"
+  cell $pmux $procmux$13
+    parameter \S_WIDTH 5
+    parameter \WIDTH 3
+    connect \A 3'x
+    connect \B 15'010110000001111
+    connect \S { $procmux$18_CMP $procmux$17_CMP $procmux$16_CMP $procmux$15_CMP $procmux$14_CMP }
+    connect \Y $procmux$13_Y
+  end
+
+  attribute \full_case 1
+  attribute \src "aludec.v:0.0-0.0|aludec.v:16.16-23.16"
+  cell $eq $procmux$14_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \funct
+    connect \B 6'101010
+    connect \Y $procmux$14_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "aludec.v:0.0-0.0|aludec.v:16.16-23.16"
+  cell $eq $procmux$15_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \funct
+    connect \B 6'100101
+    connect \Y $procmux$15_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "aludec.v:0.0-0.0|aludec.v:16.16-23.16"
+  cell $eq $procmux$16_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \funct
+    connect \B 6'100100
+    connect \Y $procmux$16_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "aludec.v:0.0-0.0|aludec.v:16.16-23.16"
+  cell $eq $procmux$17_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \funct
+    connect \B 6'100010
+    connect \Y $procmux$17_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "aludec.v:0.0-0.0|aludec.v:16.16-23.16"
+  cell $eq $procmux$18_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \funct
+    connect \B 6'100000
+    connect \Y $procmux$18_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "aludec.v:0.0-0.0|aludec.v:13.5-24.12"
+  cell $pmux $procmux$20
+    parameter \S_WIDTH 2
+    parameter \WIDTH 3
+    connect \A $procmux$13_Y
+    connect \B 6'010110
+    connect \S { $procmux$22_CMP $procmux$21_CMP }
+    connect \Y \alucontrol
+  end
+
+  attribute \full_case 1
+  attribute \src "aludec.v:0.0-0.0|aludec.v:13.5-24.12"
+  cell $eq $procmux$21_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 2
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 2
+    parameter \Y_WIDTH 1
+    connect \A \aluop
+    connect \B 2'01
+    connect \Y $procmux$21_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "aludec.v:0.0-0.0|aludec.v:13.5-24.12"
+  cell $logic_not $procmux$22_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 2
+    parameter \Y_WIDTH 1
+    connect \A \aluop
+    connect \Y $procmux$22_CMP
+  end
+end
+
+attribute \src "controller.v:6.1-23.10"
+module \controller
+
+  attribute \src "controller.v:12.43-12.53"
+  wire width 3 output 11 \alucontrol
+
+  attribute \src "controller.v:14.15-14.20"
+  wire width 2 \aluop
+
+  attribute \src "controller.v:9.50-9.56"
+  wire output 7 \alusrc
+
+  attribute \src "controller.v:15.15-15.21"
+  wire \branch
+
+  attribute \src "controller.v:6.47-6.52"
+  wire width 6 input 2 \funct
+
+  attribute \src "controller.v:11.43-11.47"
+  wire output 10 \jump
+
+  attribute \src "controller.v:8.43-8.51"
+  wire output 4 \memtoreg
+
+  attribute \src "controller.v:8.53-8.61"
+  wire output 5 \memwrite
+
+  attribute \src "controller.v:6.43-6.45"
+  wire width 6 input 1 \op
+
+  attribute \src "controller.v:9.43-9.48"
+  wire output 6 \pcsrc
+
+  attribute \src "controller.v:10.43-10.49"
+  wire output 8 \regdst
+
+  attribute \src "controller.v:10.51-10.59"
+  wire output 9 \regwrite
+
+  attribute \src "controller.v:7.43-7.47"
+  wire input 3 \zero
+
+  attribute \src "controller.v:21.18-21.31"
+  cell $and $and$controller.v:21$1
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A \branch
+    connect \B \zero
+    connect \Y \pcsrc
+  end
+
+  attribute \module_not_derived 1
+  attribute \src "controller.v:19.10-19.41"
+  cell \aludec \ad
+    connect \alucontrol \alucontrol
+    connect \aluop \aluop
+    connect \funct \funct
+  end
+
+  attribute \module_not_derived 1
+  attribute \src "controller.v:17.11-17.87"
+  cell \maindec \md
+    connect \aluop \aluop
+    connect \alusrc \alusrc
+    connect \branch \branch
+    connect \jump \jump
+    connect \memtoreg \memtoreg
+    connect \memwrite \memwrite
+    connect \op \op
+    connect \regdst \regdst
+    connect \regwrite \regwrite
+  end
+end
+
+attribute \src "maindec.v:6.1-28.10"
+module \maindec
+
+  wire $procmux$10_CMP
+
+  wire $procmux$11_CMP
+
+  wire $procmux$6_CMP
+
+  wire $procmux$7_CMP
+
+  wire $procmux$8_CMP
+
+  wire $procmux$9_CMP
+
+  attribute \src "maindec.v:11.39-11.44"
+  wire width 2 output 9 \aluop
+
+  attribute \src "maindec.v:8.47-8.53"
+  wire output 5 \alusrc
+
+  attribute \src "maindec.v:8.39-8.45"
+  wire output 4 \branch
+
+  attribute \src "maindec.v:13.15-13.23"
+  wire width 9 \controls
+
+  attribute \src "maindec.v:10.39-10.43"
+  wire output 8 \jump
+
+  attribute \src "maindec.v:7.39-7.47"
+  wire output 2 \memtoreg
+
+  attribute \src "maindec.v:7.49-7.57"
+  wire output 3 \memwrite
+
+  attribute \src "maindec.v:6.39-6.41"
+  wire width 6 input 1 \op
+
+  attribute \src "maindec.v:9.39-9.45"
+  wire output 6 \regdst
+
+  attribute \src "maindec.v:9.47-9.55"
+  wire output 7 \regwrite
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $eq $procmux$10_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \B 6'100011
+    connect \Y $procmux$10_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $logic_not $procmux$11_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \Y $procmux$11_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $pmux $procmux$5
+    parameter \S_WIDTH 6
+    parameter \WIDTH 9
+    connect \A 9'x
+    connect \B 54'110000010101001000001010000000100001101000000000000100
+    connect \S { $procmux$11_CMP $procmux$10_CMP $procmux$9_CMP $procmux$8_CMP $procmux$7_CMP $procmux$6_CMP }
+    connect \Y \controls
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $eq $procmux$6_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \B 6'000010
+    connect \Y $procmux$6_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $eq $procmux$7_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \B 6'001000
+    connect \Y $procmux$7_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $eq $procmux$8_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \B 6'000100
+    connect \Y $procmux$8_CMP
+  end
+
+  attribute \full_case 1
+  attribute \src "maindec.v:0.0-0.0|maindec.v:18.5-26.12"
+  cell $eq $procmux$9_CMP0
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 6
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 6
+    parameter \Y_WIDTH 1
+    connect \A \op
+    connect \B 6'101011
+    connect \Y $procmux$9_CMP
+  end
+
+  connect \aluop \controls [1:0]
+  connect \alusrc \controls [6]
+  connect \branch \controls [5]
+  connect \jump \controls [2]
+  connect \memtoreg \controls [3]
+  connect \memwrite \controls [4]
+  connect \regdst \controls [7]
+  connect \regwrite \controls [8]
+end

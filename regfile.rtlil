@@ -1,0 +1,2209 @@
+
+autoidx 558
+
+attribute \src "regfile.v:1.1-21.10"
+module \regfile
+
+  attribute \src "regfile.v:16.3-17.29"
+  wire width 5 $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3
+
+  attribute \src "regfile.v:16.3-17.29"
+  wire width 32 $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+
+  attribute \src "regfile.v:16.3-17.29"
+  wire width 32 $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5
+
+  wire $auto$rtlil.cc:2389:And$287
+
+  wire $auto$rtlil.cc:2389:And$295
+
+  wire $auto$rtlil.cc:2389:And$297
+
+  wire $auto$rtlil.cc:2389:And$299
+
+  wire $auto$rtlil.cc:2389:And$307
+
+  wire $auto$rtlil.cc:2389:And$309
+
+  wire $auto$rtlil.cc:2389:And$317
+
+  wire $auto$rtlil.cc:2389:And$319
+
+  wire $auto$rtlil.cc:2389:And$325
+
+  wire $auto$rtlil.cc:2389:And$327
+
+  wire $auto$rtlil.cc:2389:And$335
+
+  wire $auto$rtlil.cc:2389:And$337
+
+  wire $auto$rtlil.cc:2389:And$343
+
+  wire $auto$rtlil.cc:2389:And$349
+
+  wire $auto$rtlil.cc:2389:And$355
+
+  wire $auto$rtlil.cc:2389:And$363
+
+  wire $auto$rtlil.cc:2389:And$365
+
+  wire $auto$rtlil.cc:2389:And$367
+
+  wire $auto$rtlil.cc:2389:And$373
+
+  wire $auto$rtlil.cc:2389:And$379
+
+  wire $auto$rtlil.cc:2389:And$385
+
+  wire $auto$rtlil.cc:2389:And$391
+
+  wire $auto$rtlil.cc:2389:And$393
+
+  wire $auto$rtlil.cc:2389:And$399
+
+  wire $auto$rtlil.cc:2389:And$405
+
+  wire $auto$rtlil.cc:2389:And$411
+
+  wire $auto$rtlil.cc:2389:And$419
+
+  wire $auto$rtlil.cc:2389:And$421
+
+  wire $auto$rtlil.cc:2389:And$423
+
+  wire $auto$rtlil.cc:2389:And$429
+
+  wire $auto$rtlil.cc:2389:And$435
+
+  wire $auto$rtlil.cc:2389:And$441
+
+  wire $auto$rtlil.cc:2389:And$447
+
+  wire $auto$rtlil.cc:2389:And$449
+
+  wire $auto$rtlil.cc:2389:And$455
+
+  wire $auto$rtlil.cc:2389:And$461
+
+  wire $auto$rtlil.cc:2389:And$467
+
+  wire $auto$rtlil.cc:2389:And$473
+
+  wire $auto$rtlil.cc:2389:And$475
+
+  wire $auto$rtlil.cc:2389:And$477
+
+  wire $auto$rtlil.cc:2389:And$483
+
+  wire $auto$rtlil.cc:2389:And$489
+
+  wire $auto$rtlil.cc:2389:And$495
+
+  wire $auto$rtlil.cc:2389:And$501
+
+  wire $auto$rtlil.cc:2389:And$503
+
+  wire $auto$rtlil.cc:2389:And$509
+
+  wire $auto$rtlil.cc:2389:And$515
+
+  wire $auto$rtlil.cc:2389:And$521
+
+  wire $auto$rtlil.cc:2397:Eq$283
+
+  wire $auto$rtlil.cc:2397:Eq$285
+
+  wire $auto$rtlil.cc:2397:Eq$289
+
+  wire $auto$rtlil.cc:2397:Eq$291
+
+  wire $auto$rtlil.cc:2397:Eq$293
+
+  wire width 32 $memory\rf$rdmux[0][0][0]$a$97
+
+  wire width 32 $memory\rf$rdmux[0][0][0]$b$98
+
+  wire width 32 $memory\rf$rdmux[0][1][0]$a$100
+
+  wire width 32 $memory\rf$rdmux[0][1][0]$b$101
+
+  wire width 32 $memory\rf$rdmux[0][1][1]$a$103
+
+  wire width 32 $memory\rf$rdmux[0][1][1]$b$104
+
+  wire width 32 $memory\rf$rdmux[0][2][0]$a$106
+
+  wire width 32 $memory\rf$rdmux[0][2][0]$b$107
+
+  wire width 32 $memory\rf$rdmux[0][2][1]$a$109
+
+  wire width 32 $memory\rf$rdmux[0][2][1]$b$110
+
+  wire width 32 $memory\rf$rdmux[0][2][2]$a$112
+
+  wire width 32 $memory\rf$rdmux[0][2][2]$b$113
+
+  wire width 32 $memory\rf$rdmux[0][2][3]$a$115
+
+  wire width 32 $memory\rf$rdmux[0][2][3]$b$116
+
+  wire width 32 $memory\rf$rdmux[0][3][0]$a$118
+
+  wire width 32 $memory\rf$rdmux[0][3][0]$b$119
+
+  wire width 32 $memory\rf$rdmux[0][3][1]$a$121
+
+  wire width 32 $memory\rf$rdmux[0][3][1]$b$122
+
+  wire width 32 $memory\rf$rdmux[0][3][2]$a$124
+
+  wire width 32 $memory\rf$rdmux[0][3][2]$b$125
+
+  wire width 32 $memory\rf$rdmux[0][3][3]$a$127
+
+  wire width 32 $memory\rf$rdmux[0][3][3]$b$128
+
+  wire width 32 $memory\rf$rdmux[0][3][4]$a$130
+
+  wire width 32 $memory\rf$rdmux[0][3][4]$b$131
+
+  wire width 32 $memory\rf$rdmux[0][3][5]$a$133
+
+  wire width 32 $memory\rf$rdmux[0][3][5]$b$134
+
+  wire width 32 $memory\rf$rdmux[0][3][6]$a$136
+
+  wire width 32 $memory\rf$rdmux[0][3][6]$b$137
+
+  wire width 32 $memory\rf$rdmux[0][3][7]$a$139
+
+  wire width 32 $memory\rf$rdmux[0][3][7]$b$140
+
+  wire width 32 $memory\rf$rdmux[1][0][0]$a$190
+
+  wire width 32 $memory\rf$rdmux[1][0][0]$b$191
+
+  wire width 32 $memory\rf$rdmux[1][1][0]$a$193
+
+  wire width 32 $memory\rf$rdmux[1][1][0]$b$194
+
+  wire width 32 $memory\rf$rdmux[1][1][1]$a$196
+
+  wire width 32 $memory\rf$rdmux[1][1][1]$b$197
+
+  wire width 32 $memory\rf$rdmux[1][2][0]$a$199
+
+  wire width 32 $memory\rf$rdmux[1][2][0]$b$200
+
+  wire width 32 $memory\rf$rdmux[1][2][1]$a$202
+
+  wire width 32 $memory\rf$rdmux[1][2][1]$b$203
+
+  wire width 32 $memory\rf$rdmux[1][2][2]$a$205
+
+  wire width 32 $memory\rf$rdmux[1][2][2]$b$206
+
+  wire width 32 $memory\rf$rdmux[1][2][3]$a$208
+
+  wire width 32 $memory\rf$rdmux[1][2][3]$b$209
+
+  wire width 32 $memory\rf$rdmux[1][3][0]$a$211
+
+  wire width 32 $memory\rf$rdmux[1][3][0]$b$212
+
+  wire width 32 $memory\rf$rdmux[1][3][1]$a$214
+
+  wire width 32 $memory\rf$rdmux[1][3][1]$b$215
+
+  wire width 32 $memory\rf$rdmux[1][3][2]$a$217
+
+  wire width 32 $memory\rf$rdmux[1][3][2]$b$218
+
+  wire width 32 $memory\rf$rdmux[1][3][3]$a$220
+
+  wire width 32 $memory\rf$rdmux[1][3][3]$b$221
+
+  wire width 32 $memory\rf$rdmux[1][3][4]$a$223
+
+  wire width 32 $memory\rf$rdmux[1][3][4]$b$224
+
+  wire width 32 $memory\rf$rdmux[1][3][5]$a$226
+
+  wire width 32 $memory\rf$rdmux[1][3][5]$b$227
+
+  wire width 32 $memory\rf$rdmux[1][3][6]$a$229
+
+  wire width 32 $memory\rf$rdmux[1][3][6]$b$230
+
+  wire width 32 $memory\rf$rdmux[1][3][7]$a$232
+
+  wire width 32 $memory\rf$rdmux[1][3][7]$b$233
+
+  wire $memory\rf$wren[0][0][0]$y$301
+
+  wire $memory\rf$wren[10][0][0]$y$381
+
+  wire $memory\rf$wren[11][0][0]$y$387
+
+  wire $memory\rf$wren[12][0][0]$y$395
+
+  wire $memory\rf$wren[13][0][0]$y$401
+
+  wire $memory\rf$wren[14][0][0]$y$407
+
+  wire $memory\rf$wren[15][0][0]$y$413
+
+  wire $memory\rf$wren[16][0][0]$y$425
+
+  wire $memory\rf$wren[17][0][0]$y$431
+
+  wire $memory\rf$wren[18][0][0]$y$437
+
+  wire $memory\rf$wren[19][0][0]$y$443
+
+  wire $memory\rf$wren[1][0][0]$y$311
+
+  wire $memory\rf$wren[20][0][0]$y$451
+
+  wire $memory\rf$wren[21][0][0]$y$457
+
+  wire $memory\rf$wren[22][0][0]$y$463
+
+  wire $memory\rf$wren[23][0][0]$y$469
+
+  wire $memory\rf$wren[24][0][0]$y$479
+
+  wire $memory\rf$wren[25][0][0]$y$485
+
+  wire $memory\rf$wren[26][0][0]$y$491
+
+  wire $memory\rf$wren[27][0][0]$y$497
+
+  wire $memory\rf$wren[28][0][0]$y$505
+
+  wire $memory\rf$wren[29][0][0]$y$511
+
+  wire $memory\rf$wren[2][0][0]$y$321
+
+  wire $memory\rf$wren[30][0][0]$y$517
+
+  wire $memory\rf$wren[31][0][0]$y$523
+
+  wire $memory\rf$wren[3][0][0]$y$329
+
+  wire $memory\rf$wren[4][0][0]$y$339
+
+  wire $memory\rf$wren[5][0][0]$y$345
+
+  wire $memory\rf$wren[6][0][0]$y$351
+
+  wire $memory\rf$wren[7][0][0]$y$357
+
+  wire $memory\rf$wren[8][0][0]$y$369
+
+  wire $memory\rf$wren[9][0][0]$y$375
+
+  attribute \src "regfile.v:19.29-19.31"
+  wire width 32 $memrd$\rf$regfile.v:19$10_DATA
+
+  attribute \src "regfile.v:20.29-20.31"
+  wire width 32 $memrd$\rf$regfile.v:20$13_DATA
+
+  attribute \src "regfile.v:19.17-19.25"
+  wire $ne$regfile.v:19$9_Y
+
+  attribute \src "regfile.v:20.17-20.25"
+  wire $ne$regfile.v:20$12_Y
+
+  attribute \src "regfile.v:1.35-1.38"
+  wire input 1 \clk
+
+  attribute \src "regfile.v:3.35-3.38"
+  wire width 5 input 3 \ra1
+
+  attribute \src "regfile.v:3.40-3.43"
+  wire width 5 input 4 \ra2
+
+  attribute \src "regfile.v:5.35-5.38"
+  wire width 32 output 7 \rd1
+
+  attribute \src "regfile.v:5.40-5.43"
+  wire width 32 output 8 \rd2
+
+  wire width 32 \rf[0]
+
+  wire width 32 \rf[10]
+
+  wire width 32 \rf[11]
+
+  wire width 32 \rf[12]
+
+  wire width 32 \rf[13]
+
+  wire width 32 \rf[14]
+
+  wire width 32 \rf[15]
+
+  wire width 32 \rf[16]
+
+  wire width 32 \rf[17]
+
+  wire width 32 \rf[18]
+
+  wire width 32 \rf[19]
+
+  wire width 32 \rf[1]
+
+  wire width 32 \rf[20]
+
+  wire width 32 \rf[21]
+
+  wire width 32 \rf[22]
+
+  wire width 32 \rf[23]
+
+  wire width 32 \rf[24]
+
+  wire width 32 \rf[25]
+
+  wire width 32 \rf[26]
+
+  wire width 32 \rf[27]
+
+  wire width 32 \rf[28]
+
+  wire width 32 \rf[29]
+
+  wire width 32 \rf[2]
+
+  wire width 32 \rf[30]
+
+  wire width 32 \rf[31]
+
+  wire width 32 \rf[3]
+
+  wire width 32 \rf[4]
+
+  wire width 32 \rf[5]
+
+  wire width 32 \rf[6]
+
+  wire width 32 \rf[7]
+
+  wire width 32 \rf[8]
+
+  wire width 32 \rf[9]
+
+  attribute \src "regfile.v:3.45-3.48"
+  wire width 5 input 5 \wa3
+
+  attribute \src "regfile.v:4.35-4.38"
+  wire width 32 input 6 \wd3
+
+  attribute \src "regfile.v:2.35-2.38"
+  wire input 2 \we3
+
+  cell $dffe $auto$ff.cc:262:slice$526
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[9][0][0]$y$375
+    connect \Q \rf[9]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$527
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[8][0][0]$y$369
+    connect \Q \rf[8]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$528
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[7][0][0]$y$357
+    connect \Q \rf[7]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$529
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[6][0][0]$y$351
+    connect \Q \rf[6]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$530
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[5][0][0]$y$345
+    connect \Q \rf[5]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$531
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[4][0][0]$y$339
+    connect \Q \rf[4]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$532
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[3][0][0]$y$329
+    connect \Q \rf[3]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$533
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[31][0][0]$y$523
+    connect \Q \rf[31]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$534
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[30][0][0]$y$517
+    connect \Q \rf[30]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$535
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[2][0][0]$y$321
+    connect \Q \rf[2]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$536
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[29][0][0]$y$511
+    connect \Q \rf[29]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$537
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[28][0][0]$y$505
+    connect \Q \rf[28]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$538
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[27][0][0]$y$497
+    connect \Q \rf[27]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$539
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[26][0][0]$y$491
+    connect \Q \rf[26]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$540
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[25][0][0]$y$485
+    connect \Q \rf[25]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$541
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[24][0][0]$y$479
+    connect \Q \rf[24]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$542
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[23][0][0]$y$469
+    connect \Q \rf[23]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$543
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[22][0][0]$y$463
+    connect \Q \rf[22]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$544
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[21][0][0]$y$457
+    connect \Q \rf[21]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$545
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[20][0][0]$y$451
+    connect \Q \rf[20]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$546
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[1][0][0]$y$311
+    connect \Q \rf[1]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$547
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[19][0][0]$y$443
+    connect \Q \rf[19]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$548
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[18][0][0]$y$437
+    connect \Q \rf[18]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$549
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[17][0][0]$y$431
+    connect \Q \rf[17]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$550
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[16][0][0]$y$425
+    connect \Q \rf[16]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$551
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[15][0][0]$y$413
+    connect \Q \rf[15]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$552
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[14][0][0]$y$407
+    connect \Q \rf[14]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$553
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[13][0][0]$y$401
+    connect \Q \rf[13]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$554
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[12][0][0]$y$395
+    connect \Q \rf[12]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$555
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[11][0][0]$y$387
+    connect \Q \rf[11]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$556
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[10][0][0]$y$381
+    connect \Q \rf[10]
+  end
+
+  cell $dffe $auto$ff.cc:262:slice$557
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 32
+    connect \CLK \clk
+    connect \D $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+    connect \EN $memory\rf$wren[0][0][0]$y$301
+    connect \Q \rf[0]
+  end
+
+  cell $not $auto$memory_map.cc:89:addr_decode$282
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [0]
+    connect \Y $auto$rtlil.cc:2397:Eq$283
+  end
+
+  cell $not $auto$memory_map.cc:89:addr_decode$284
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [1]
+    connect \Y $auto$rtlil.cc:2397:Eq$285
+  end
+
+  cell $not $auto$memory_map.cc:89:addr_decode$288
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [2]
+    connect \Y $auto$rtlil.cc:2397:Eq$289
+  end
+
+  cell $not $auto$memory_map.cc:89:addr_decode$290
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [3]
+    connect \Y $auto$rtlil.cc:2397:Eq$291
+  end
+
+  cell $not $auto$memory_map.cc:89:addr_decode$292
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [4]
+    connect \Y $auto$rtlil.cc:2397:Eq$293
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$286
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2397:Eq$283
+    connect \B $auto$rtlil.cc:2397:Eq$285
+    connect \Y $auto$rtlil.cc:2389:And$287
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$294
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2397:Eq$291
+    connect \B $auto$rtlil.cc:2397:Eq$293
+    connect \Y $auto$rtlil.cc:2389:And$295
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$296
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2397:Eq$289
+    connect \B $auto$rtlil.cc:2389:And$295
+    connect \Y $auto$rtlil.cc:2389:And$297
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$298
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$287
+    connect \B $auto$rtlil.cc:2389:And$297
+    connect \Y $auto$rtlil.cc:2389:And$299
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$306
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [0]
+    connect \B $auto$rtlil.cc:2397:Eq$285
+    connect \Y $auto$rtlil.cc:2389:And$307
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$308
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$307
+    connect \B $auto$rtlil.cc:2389:And$297
+    connect \Y $auto$rtlil.cc:2389:And$309
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$316
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2397:Eq$283
+    connect \B $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [1]
+    connect \Y $auto$rtlil.cc:2389:And$317
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$318
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$317
+    connect \B $auto$rtlil.cc:2389:And$297
+    connect \Y $auto$rtlil.cc:2389:And$319
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$324
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [0]
+    connect \B $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [1]
+    connect \Y $auto$rtlil.cc:2389:And$325
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$326
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$325
+    connect \B $auto$rtlil.cc:2389:And$297
+    connect \Y $auto$rtlil.cc:2389:And$327
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$334
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [2]
+    connect \B $auto$rtlil.cc:2389:And$295
+    connect \Y $auto$rtlil.cc:2389:And$335
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$336
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$287
+    connect \B $auto$rtlil.cc:2389:And$335
+    connect \Y $auto$rtlil.cc:2389:And$337
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$342
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$307
+    connect \B $auto$rtlil.cc:2389:And$335
+    connect \Y $auto$rtlil.cc:2389:And$343
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$348
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$317
+    connect \B $auto$rtlil.cc:2389:And$335
+    connect \Y $auto$rtlil.cc:2389:And$349
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$354
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$325
+    connect \B $auto$rtlil.cc:2389:And$335
+    connect \Y $auto$rtlil.cc:2389:And$355
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$362
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [3]
+    connect \B $auto$rtlil.cc:2397:Eq$293
+    connect \Y $auto$rtlil.cc:2389:And$363
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$364
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2397:Eq$289
+    connect \B $auto$rtlil.cc:2389:And$363
+    connect \Y $auto$rtlil.cc:2389:And$365
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$366
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$287
+    connect \B $auto$rtlil.cc:2389:And$365
+    connect \Y $auto$rtlil.cc:2389:And$367
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$372
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$307
+    connect \B $auto$rtlil.cc:2389:And$365
+    connect \Y $auto$rtlil.cc:2389:And$373
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$378
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$317
+    connect \B $auto$rtlil.cc:2389:And$365
+    connect \Y $auto$rtlil.cc:2389:And$379
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$384
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$325
+    connect \B $auto$rtlil.cc:2389:And$365
+    connect \Y $auto$rtlil.cc:2389:And$385
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$390
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [2]
+    connect \B $auto$rtlil.cc:2389:And$363
+    connect \Y $auto$rtlil.cc:2389:And$391
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$392
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$287
+    connect \B $auto$rtlil.cc:2389:And$391
+    connect \Y $auto$rtlil.cc:2389:And$393
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$398
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$307
+    connect \B $auto$rtlil.cc:2389:And$391
+    connect \Y $auto$rtlil.cc:2389:And$399
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$404
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$317
+    connect \B $auto$rtlil.cc:2389:And$391
+    connect \Y $auto$rtlil.cc:2389:And$405
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$410
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$325
+    connect \B $auto$rtlil.cc:2389:And$391
+    connect \Y $auto$rtlil.cc:2389:And$411
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$418
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2397:Eq$291
+    connect \B $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [4]
+    connect \Y $auto$rtlil.cc:2389:And$419
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$420
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2397:Eq$289
+    connect \B $auto$rtlil.cc:2389:And$419
+    connect \Y $auto$rtlil.cc:2389:And$421
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$422
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$287
+    connect \B $auto$rtlil.cc:2389:And$421
+    connect \Y $auto$rtlil.cc:2389:And$423
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$428
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$307
+    connect \B $auto$rtlil.cc:2389:And$421
+    connect \Y $auto$rtlil.cc:2389:And$429
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$434
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$317
+    connect \B $auto$rtlil.cc:2389:And$421
+    connect \Y $auto$rtlil.cc:2389:And$435
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$440
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$325
+    connect \B $auto$rtlil.cc:2389:And$421
+    connect \Y $auto$rtlil.cc:2389:And$441
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$446
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [2]
+    connect \B $auto$rtlil.cc:2389:And$419
+    connect \Y $auto$rtlil.cc:2389:And$447
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$448
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$287
+    connect \B $auto$rtlil.cc:2389:And$447
+    connect \Y $auto$rtlil.cc:2389:And$449
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$454
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$307
+    connect \B $auto$rtlil.cc:2389:And$447
+    connect \Y $auto$rtlil.cc:2389:And$455
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$460
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$317
+    connect \B $auto$rtlil.cc:2389:And$447
+    connect \Y $auto$rtlil.cc:2389:And$461
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$466
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$325
+    connect \B $auto$rtlil.cc:2389:And$447
+    connect \Y $auto$rtlil.cc:2389:And$467
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$472
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [3]
+    connect \B $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [4]
+    connect \Y $auto$rtlil.cc:2389:And$473
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$474
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2397:Eq$289
+    connect \B $auto$rtlil.cc:2389:And$473
+    connect \Y $auto$rtlil.cc:2389:And$475
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$476
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$287
+    connect \B $auto$rtlil.cc:2389:And$475
+    connect \Y $auto$rtlil.cc:2389:And$477
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$482
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$307
+    connect \B $auto$rtlil.cc:2389:And$475
+    connect \Y $auto$rtlil.cc:2389:And$483
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$488
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$317
+    connect \B $auto$rtlil.cc:2389:And$475
+    connect \Y $auto$rtlil.cc:2389:And$489
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$494
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$325
+    connect \B $auto$rtlil.cc:2389:And$475
+    connect \Y $auto$rtlil.cc:2389:And$495
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$500
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3 [2]
+    connect \B $auto$rtlil.cc:2389:And$473
+    connect \Y $auto$rtlil.cc:2389:And$501
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$502
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$287
+    connect \B $auto$rtlil.cc:2389:And$501
+    connect \Y $auto$rtlil.cc:2389:And$503
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$508
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$307
+    connect \B $auto$rtlil.cc:2389:And$501
+    connect \Y $auto$rtlil.cc:2389:And$509
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$514
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$317
+    connect \B $auto$rtlil.cc:2389:And$501
+    connect \Y $auto$rtlil.cc:2389:And$515
+  end
+
+  cell $and $auto$memory_map.cc:94:addr_decode$520
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$325
+    connect \B $auto$rtlil.cc:2389:And$501
+    connect \Y $auto$rtlil.cc:2389:And$521
+  end
+
+  cell $mux $memory\rf$rdmux[0][0][0]$96
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][0][0]$a$97
+    connect \B $memory\rf$rdmux[0][0][0]$b$98
+    connect \S \ra2 [4]
+    connect \Y $memrd$\rf$regfile.v:20$13_DATA
+  end
+
+  cell $mux $memory\rf$rdmux[0][1][0]$99
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][1][0]$a$100
+    connect \B $memory\rf$rdmux[0][1][0]$b$101
+    connect \S \ra2 [3]
+    connect \Y $memory\rf$rdmux[0][0][0]$a$97
+  end
+
+  cell $mux $memory\rf$rdmux[0][1][1]$102
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][1][1]$a$103
+    connect \B $memory\rf$rdmux[0][1][1]$b$104
+    connect \S \ra2 [3]
+    connect \Y $memory\rf$rdmux[0][0][0]$b$98
+  end
+
+  cell $mux $memory\rf$rdmux[0][2][0]$105
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][2][0]$a$106
+    connect \B $memory\rf$rdmux[0][2][0]$b$107
+    connect \S \ra2 [2]
+    connect \Y $memory\rf$rdmux[0][1][0]$a$100
+  end
+
+  cell $mux $memory\rf$rdmux[0][2][1]$108
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][2][1]$a$109
+    connect \B $memory\rf$rdmux[0][2][1]$b$110
+    connect \S \ra2 [2]
+    connect \Y $memory\rf$rdmux[0][1][0]$b$101
+  end
+
+  cell $mux $memory\rf$rdmux[0][2][2]$111
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][2][2]$a$112
+    connect \B $memory\rf$rdmux[0][2][2]$b$113
+    connect \S \ra2 [2]
+    connect \Y $memory\rf$rdmux[0][1][1]$a$103
+  end
+
+  cell $mux $memory\rf$rdmux[0][2][3]$114
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][2][3]$a$115
+    connect \B $memory\rf$rdmux[0][2][3]$b$116
+    connect \S \ra2 [2]
+    connect \Y $memory\rf$rdmux[0][1][1]$b$104
+  end
+
+  cell $mux $memory\rf$rdmux[0][3][0]$117
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][3][0]$a$118
+    connect \B $memory\rf$rdmux[0][3][0]$b$119
+    connect \S \ra2 [1]
+    connect \Y $memory\rf$rdmux[0][2][0]$a$106
+  end
+
+  cell $mux $memory\rf$rdmux[0][3][1]$120
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][3][1]$a$121
+    connect \B $memory\rf$rdmux[0][3][1]$b$122
+    connect \S \ra2 [1]
+    connect \Y $memory\rf$rdmux[0][2][0]$b$107
+  end
+
+  cell $mux $memory\rf$rdmux[0][3][2]$123
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][3][2]$a$124
+    connect \B $memory\rf$rdmux[0][3][2]$b$125
+    connect \S \ra2 [1]
+    connect \Y $memory\rf$rdmux[0][2][1]$a$109
+  end
+
+  cell $mux $memory\rf$rdmux[0][3][3]$126
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][3][3]$a$127
+    connect \B $memory\rf$rdmux[0][3][3]$b$128
+    connect \S \ra2 [1]
+    connect \Y $memory\rf$rdmux[0][2][1]$b$110
+  end
+
+  cell $mux $memory\rf$rdmux[0][3][4]$129
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][3][4]$a$130
+    connect \B $memory\rf$rdmux[0][3][4]$b$131
+    connect \S \ra2 [1]
+    connect \Y $memory\rf$rdmux[0][2][2]$a$112
+  end
+
+  cell $mux $memory\rf$rdmux[0][3][5]$132
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][3][5]$a$133
+    connect \B $memory\rf$rdmux[0][3][5]$b$134
+    connect \S \ra2 [1]
+    connect \Y $memory\rf$rdmux[0][2][2]$b$113
+  end
+
+  cell $mux $memory\rf$rdmux[0][3][6]$135
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][3][6]$a$136
+    connect \B $memory\rf$rdmux[0][3][6]$b$137
+    connect \S \ra2 [1]
+    connect \Y $memory\rf$rdmux[0][2][3]$a$115
+  end
+
+  cell $mux $memory\rf$rdmux[0][3][7]$138
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[0][3][7]$a$139
+    connect \B $memory\rf$rdmux[0][3][7]$b$140
+    connect \S \ra2 [1]
+    connect \Y $memory\rf$rdmux[0][2][3]$b$116
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][0]$141
+    parameter \WIDTH 32
+    connect \A \rf[0]
+    connect \B \rf[1]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][0]$a$118
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][10]$171
+    parameter \WIDTH 32
+    connect \A \rf[20]
+    connect \B \rf[21]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][5]$a$133
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][11]$174
+    parameter \WIDTH 32
+    connect \A \rf[22]
+    connect \B \rf[23]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][5]$b$134
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][12]$177
+    parameter \WIDTH 32
+    connect \A \rf[24]
+    connect \B \rf[25]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][6]$a$136
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][13]$180
+    parameter \WIDTH 32
+    connect \A \rf[26]
+    connect \B \rf[27]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][6]$b$137
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][14]$183
+    parameter \WIDTH 32
+    connect \A \rf[28]
+    connect \B \rf[29]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][7]$a$139
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][15]$186
+    parameter \WIDTH 32
+    connect \A \rf[30]
+    connect \B \rf[31]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][7]$b$140
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][1]$144
+    parameter \WIDTH 32
+    connect \A \rf[2]
+    connect \B \rf[3]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][0]$b$119
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][2]$147
+    parameter \WIDTH 32
+    connect \A \rf[4]
+    connect \B \rf[5]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][1]$a$121
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][3]$150
+    parameter \WIDTH 32
+    connect \A \rf[6]
+    connect \B \rf[7]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][1]$b$122
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][4]$153
+    parameter \WIDTH 32
+    connect \A \rf[8]
+    connect \B \rf[9]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][2]$a$124
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][5]$156
+    parameter \WIDTH 32
+    connect \A \rf[10]
+    connect \B \rf[11]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][2]$b$125
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][6]$159
+    parameter \WIDTH 32
+    connect \A \rf[12]
+    connect \B \rf[13]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][3]$a$127
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][7]$162
+    parameter \WIDTH 32
+    connect \A \rf[14]
+    connect \B \rf[15]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][3]$b$128
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][8]$165
+    parameter \WIDTH 32
+    connect \A \rf[16]
+    connect \B \rf[17]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][4]$a$130
+  end
+
+  cell $mux $memory\rf$rdmux[0][4][9]$168
+    parameter \WIDTH 32
+    connect \A \rf[18]
+    connect \B \rf[19]
+    connect \S \ra2 [0]
+    connect \Y $memory\rf$rdmux[0][3][4]$b$131
+  end
+
+  cell $mux $memory\rf$rdmux[1][0][0]$189
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][0][0]$a$190
+    connect \B $memory\rf$rdmux[1][0][0]$b$191
+    connect \S \ra1 [4]
+    connect \Y $memrd$\rf$regfile.v:19$10_DATA
+  end
+
+  cell $mux $memory\rf$rdmux[1][1][0]$192
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][1][0]$a$193
+    connect \B $memory\rf$rdmux[1][1][0]$b$194
+    connect \S \ra1 [3]
+    connect \Y $memory\rf$rdmux[1][0][0]$a$190
+  end
+
+  cell $mux $memory\rf$rdmux[1][1][1]$195
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][1][1]$a$196
+    connect \B $memory\rf$rdmux[1][1][1]$b$197
+    connect \S \ra1 [3]
+    connect \Y $memory\rf$rdmux[1][0][0]$b$191
+  end
+
+  cell $mux $memory\rf$rdmux[1][2][0]$198
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][2][0]$a$199
+    connect \B $memory\rf$rdmux[1][2][0]$b$200
+    connect \S \ra1 [2]
+    connect \Y $memory\rf$rdmux[1][1][0]$a$193
+  end
+
+  cell $mux $memory\rf$rdmux[1][2][1]$201
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][2][1]$a$202
+    connect \B $memory\rf$rdmux[1][2][1]$b$203
+    connect \S \ra1 [2]
+    connect \Y $memory\rf$rdmux[1][1][0]$b$194
+  end
+
+  cell $mux $memory\rf$rdmux[1][2][2]$204
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][2][2]$a$205
+    connect \B $memory\rf$rdmux[1][2][2]$b$206
+    connect \S \ra1 [2]
+    connect \Y $memory\rf$rdmux[1][1][1]$a$196
+  end
+
+  cell $mux $memory\rf$rdmux[1][2][3]$207
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][2][3]$a$208
+    connect \B $memory\rf$rdmux[1][2][3]$b$209
+    connect \S \ra1 [2]
+    connect \Y $memory\rf$rdmux[1][1][1]$b$197
+  end
+
+  cell $mux $memory\rf$rdmux[1][3][0]$210
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][3][0]$a$211
+    connect \B $memory\rf$rdmux[1][3][0]$b$212
+    connect \S \ra1 [1]
+    connect \Y $memory\rf$rdmux[1][2][0]$a$199
+  end
+
+  cell $mux $memory\rf$rdmux[1][3][1]$213
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][3][1]$a$214
+    connect \B $memory\rf$rdmux[1][3][1]$b$215
+    connect \S \ra1 [1]
+    connect \Y $memory\rf$rdmux[1][2][0]$b$200
+  end
+
+  cell $mux $memory\rf$rdmux[1][3][2]$216
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][3][2]$a$217
+    connect \B $memory\rf$rdmux[1][3][2]$b$218
+    connect \S \ra1 [1]
+    connect \Y $memory\rf$rdmux[1][2][1]$a$202
+  end
+
+  cell $mux $memory\rf$rdmux[1][3][3]$219
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][3][3]$a$220
+    connect \B $memory\rf$rdmux[1][3][3]$b$221
+    connect \S \ra1 [1]
+    connect \Y $memory\rf$rdmux[1][2][1]$b$203
+  end
+
+  cell $mux $memory\rf$rdmux[1][3][4]$222
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][3][4]$a$223
+    connect \B $memory\rf$rdmux[1][3][4]$b$224
+    connect \S \ra1 [1]
+    connect \Y $memory\rf$rdmux[1][2][2]$a$205
+  end
+
+  cell $mux $memory\rf$rdmux[1][3][5]$225
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][3][5]$a$226
+    connect \B $memory\rf$rdmux[1][3][5]$b$227
+    connect \S \ra1 [1]
+    connect \Y $memory\rf$rdmux[1][2][2]$b$206
+  end
+
+  cell $mux $memory\rf$rdmux[1][3][6]$228
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][3][6]$a$229
+    connect \B $memory\rf$rdmux[1][3][6]$b$230
+    connect \S \ra1 [1]
+    connect \Y $memory\rf$rdmux[1][2][3]$a$208
+  end
+
+  cell $mux $memory\rf$rdmux[1][3][7]$231
+    parameter \WIDTH 32
+    connect \A $memory\rf$rdmux[1][3][7]$a$232
+    connect \B $memory\rf$rdmux[1][3][7]$b$233
+    connect \S \ra1 [1]
+    connect \Y $memory\rf$rdmux[1][2][3]$b$209
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][0]$234
+    parameter \WIDTH 32
+    connect \A \rf[0]
+    connect \B \rf[1]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][0]$a$211
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][10]$264
+    parameter \WIDTH 32
+    connect \A \rf[20]
+    connect \B \rf[21]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][5]$a$226
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][11]$267
+    parameter \WIDTH 32
+    connect \A \rf[22]
+    connect \B \rf[23]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][5]$b$227
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][12]$270
+    parameter \WIDTH 32
+    connect \A \rf[24]
+    connect \B \rf[25]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][6]$a$229
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][13]$273
+    parameter \WIDTH 32
+    connect \A \rf[26]
+    connect \B \rf[27]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][6]$b$230
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][14]$276
+    parameter \WIDTH 32
+    connect \A \rf[28]
+    connect \B \rf[29]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][7]$a$232
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][15]$279
+    parameter \WIDTH 32
+    connect \A \rf[30]
+    connect \B \rf[31]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][7]$b$233
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][1]$237
+    parameter \WIDTH 32
+    connect \A \rf[2]
+    connect \B \rf[3]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][0]$b$212
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][2]$240
+    parameter \WIDTH 32
+    connect \A \rf[4]
+    connect \B \rf[5]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][1]$a$214
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][3]$243
+    parameter \WIDTH 32
+    connect \A \rf[6]
+    connect \B \rf[7]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][1]$b$215
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][4]$246
+    parameter \WIDTH 32
+    connect \A \rf[8]
+    connect \B \rf[9]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][2]$a$217
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][5]$249
+    parameter \WIDTH 32
+    connect \A \rf[10]
+    connect \B \rf[11]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][2]$b$218
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][6]$252
+    parameter \WIDTH 32
+    connect \A \rf[12]
+    connect \B \rf[13]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][3]$a$220
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][7]$255
+    parameter \WIDTH 32
+    connect \A \rf[14]
+    connect \B \rf[15]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][3]$b$221
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][8]$258
+    parameter \WIDTH 32
+    connect \A \rf[16]
+    connect \B \rf[17]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][4]$a$223
+  end
+
+  cell $mux $memory\rf$rdmux[1][4][9]$261
+    parameter \WIDTH 32
+    connect \A \rf[18]
+    connect \B \rf[19]
+    connect \S \ra1 [0]
+    connect \Y $memory\rf$rdmux[1][3][4]$b$224
+  end
+
+  cell $and $memory\rf$wren[0][0][0]$300
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$299
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[0][0][0]$y$301
+  end
+
+  cell $and $memory\rf$wren[10][0][0]$380
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$379
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[10][0][0]$y$381
+  end
+
+  cell $and $memory\rf$wren[11][0][0]$386
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$385
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[11][0][0]$y$387
+  end
+
+  cell $and $memory\rf$wren[12][0][0]$394
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$393
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[12][0][0]$y$395
+  end
+
+  cell $and $memory\rf$wren[13][0][0]$400
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$399
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[13][0][0]$y$401
+  end
+
+  cell $and $memory\rf$wren[14][0][0]$406
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$405
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[14][0][0]$y$407
+  end
+
+  cell $and $memory\rf$wren[15][0][0]$412
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$411
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[15][0][0]$y$413
+  end
+
+  cell $and $memory\rf$wren[16][0][0]$424
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$423
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[16][0][0]$y$425
+  end
+
+  cell $and $memory\rf$wren[17][0][0]$430
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$429
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[17][0][0]$y$431
+  end
+
+  cell $and $memory\rf$wren[18][0][0]$436
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$435
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[18][0][0]$y$437
+  end
+
+  cell $and $memory\rf$wren[19][0][0]$442
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$441
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[19][0][0]$y$443
+  end
+
+  cell $and $memory\rf$wren[1][0][0]$310
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$309
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[1][0][0]$y$311
+  end
+
+  cell $and $memory\rf$wren[20][0][0]$450
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$449
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[20][0][0]$y$451
+  end
+
+  cell $and $memory\rf$wren[21][0][0]$456
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$455
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[21][0][0]$y$457
+  end
+
+  cell $and $memory\rf$wren[22][0][0]$462
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$461
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[22][0][0]$y$463
+  end
+
+  cell $and $memory\rf$wren[23][0][0]$468
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$467
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[23][0][0]$y$469
+  end
+
+  cell $and $memory\rf$wren[24][0][0]$478
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$477
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[24][0][0]$y$479
+  end
+
+  cell $and $memory\rf$wren[25][0][0]$484
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$483
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[25][0][0]$y$485
+  end
+
+  cell $and $memory\rf$wren[26][0][0]$490
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$489
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[26][0][0]$y$491
+  end
+
+  cell $and $memory\rf$wren[27][0][0]$496
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$495
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[27][0][0]$y$497
+  end
+
+  cell $and $memory\rf$wren[28][0][0]$504
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$503
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[28][0][0]$y$505
+  end
+
+  cell $and $memory\rf$wren[29][0][0]$510
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$509
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[29][0][0]$y$511
+  end
+
+  cell $and $memory\rf$wren[2][0][0]$320
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$319
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[2][0][0]$y$321
+  end
+
+  cell $and $memory\rf$wren[30][0][0]$516
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$515
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[30][0][0]$y$517
+  end
+
+  cell $and $memory\rf$wren[31][0][0]$522
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$521
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[31][0][0]$y$523
+  end
+
+  cell $and $memory\rf$wren[3][0][0]$328
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$327
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[3][0][0]$y$329
+  end
+
+  cell $and $memory\rf$wren[4][0][0]$338
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$337
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[4][0][0]$y$339
+  end
+
+  cell $and $memory\rf$wren[5][0][0]$344
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$343
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[5][0][0]$y$345
+  end
+
+  cell $and $memory\rf$wren[6][0][0]$350
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$349
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[6][0][0]$y$351
+  end
+
+  cell $and $memory\rf$wren[7][0][0]$356
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$355
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[7][0][0]$y$357
+  end
+
+  cell $and $memory\rf$wren[8][0][0]$368
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$367
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[8][0][0]$y$369
+  end
+
+  cell $and $memory\rf$wren[9][0][0]$374
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 1
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 1
+    parameter \Y_WIDTH 1
+    connect \A $auto$rtlil.cc:2389:And$373
+    connect \B $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+    connect \Y $memory\rf$wren[9][0][0]$y$375
+  end
+
+  attribute \src "regfile.v:19.17-19.25"
+  cell $reduce_bool $ne$regfile.v:19$9
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 5
+    parameter \Y_WIDTH 1
+    connect \A \ra1
+    connect \Y $ne$regfile.v:19$9_Y
+  end
+
+  attribute \src "regfile.v:20.17-20.25"
+  cell $reduce_bool $ne$regfile.v:20$12
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 5
+    parameter \Y_WIDTH 1
+    connect \A \ra2
+    connect \Y $ne$regfile.v:20$12_Y
+  end
+
+  attribute \full_case 1
+  attribute \src "regfile.v:17.9-17.12|regfile.v:17.5-17.29"
+  cell $mux $procmux$16
+    parameter \WIDTH 1
+    connect \A 1'0
+    connect \B 1'1
+    connect \S \we3
+    connect \Y $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31]
+  end
+
+  attribute \full_case 1
+  attribute \src "regfile.v:17.9-17.12|regfile.v:17.5-17.29"
+  cell $mux $procmux$19
+    parameter \WIDTH 32
+    connect \A 32'x
+    connect \B \wd3
+    connect \S \we3
+    connect \Y $0$memwr$\rf$regfile.v:17$1_DATA[31:0]$4
+  end
+
+  attribute \full_case 1
+  attribute \src "regfile.v:17.9-17.12|regfile.v:17.5-17.29"
+  cell $mux $procmux$22
+    parameter \WIDTH 5
+    connect \A 5'x
+    connect \B \wa3
+    connect \S \we3
+    connect \Y $0$memwr$\rf$regfile.v:17$1_ADDR[4:0]$3
+  end
+
+  attribute \src "regfile.v:19.16-19.40"
+  cell $mux $ternary$regfile.v:19$11
+    parameter \WIDTH 32
+    connect \A 0
+    connect \B $memrd$\rf$regfile.v:19$10_DATA
+    connect \S $ne$regfile.v:19$9_Y
+    connect \Y \rd1
+  end
+
+  attribute \src "regfile.v:20.16-20.40"
+  cell $mux $ternary$regfile.v:20$14
+    parameter \WIDTH 32
+    connect \A 0
+    connect \B $memrd$\rf$regfile.v:20$13_DATA
+    connect \S $ne$regfile.v:20$12_Y
+    connect \Y \rd2
+  end
+
+  connect $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [30:0] { $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] $0$memwr$\rf$regfile.v:17$1_EN[31:0]$5 [31] }
+end

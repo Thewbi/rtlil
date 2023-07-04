@@ -1,0 +1,24 @@
+
+autoidx 16
+
+attribute \src "des.v:1.1-9.10"
+module \des
+
+  attribute \src "des.v:2.21-2.22"
+  wire input 2 \d
+
+  attribute \src "des.v:1.21-1.23"
+  wire input 1 \en
+
+  attribute \src "des.v:3.26-3.27"
+  wire output 3 \q
+
+  attribute \src "des.v:5.5-7.19"
+  cell $dlatch $auto$proc_dlatch.cc:427:proc_dlatch$5
+    parameter \EN_POLARITY 1
+    parameter \WIDTH 1
+    connect \D \d
+    connect \EN \en
+    connect \Q \q
+  end
+end

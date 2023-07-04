@@ -1,0 +1,127 @@
+
+autoidx 20
+
+attribute \src "incomplete_if.v:1.1-16.10"
+module \des
+
+  attribute \src "incomplete_if.v:11.14-11.19"
+  attribute \unused_bits "4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+  wire width 32 $add$incomplete_if.v:11$4_Y
+
+  wire $auto$opt_dff.cc:194:make_patterns_logic$18
+
+  attribute \src "incomplete_if.v:10.11-10.20"
+  wire $eq$incomplete_if.v:10$3_Y
+
+  attribute \src "incomplete_if.v:12.16-12.25"
+  wire $eq$incomplete_if.v:12$5_Y
+
+  wire width 4 $procmux$10_Y
+
+  wire width 4 $procmux$7_Y
+
+  attribute \src "incomplete_if.v:13.14-13.19"
+  attribute \unused_bits "4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+  wire width 32 $sub$incomplete_if.v:13$6_Y
+
+  attribute \src "incomplete_if.v:2.20-2.23"
+  wire input 2 \clk
+
+  attribute \src "incomplete_if.v:1.26-1.30"
+  wire width 2 input 1 \mode
+
+  attribute \src "incomplete_if.v:4.30-4.31"
+  wire width 4 output 4 \q
+
+  attribute \src "incomplete_if.v:3.19-3.23"
+  wire input 3 \rstn
+
+  attribute \src "incomplete_if.v:11.14-11.19"
+  cell $add $add$incomplete_if.v:11$4
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 4
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 32
+    parameter \Y_WIDTH 32
+    connect \A \q
+    connect \B 1
+    connect \Y $add$incomplete_if.v:11$4_Y
+  end
+
+  attribute \src "incomplete_if.v:6.3-15.6"
+  cell $sdffe $auto$ff.cc:262:slice$17
+    parameter \CLK_POLARITY 1
+    parameter \EN_POLARITY 1
+    parameter \SRST_POLARITY 0
+    parameter \SRST_VALUE 4'0000
+    parameter \WIDTH 4
+    connect \CLK \clk
+    connect \D $procmux$10_Y
+    connect \EN $auto$opt_dff.cc:194:make_patterns_logic$18
+    connect \Q \q
+    connect \SRST \rstn
+  end
+
+  cell $reduce_bool $auto$opt_dff.cc:195:make_patterns_logic$19
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 2
+    parameter \Y_WIDTH 1
+    connect \A { $eq$incomplete_if.v:12$5_Y $eq$incomplete_if.v:10$3_Y }
+    connect \Y $auto$opt_dff.cc:194:make_patterns_logic$18
+  end
+
+  attribute \src "incomplete_if.v:10.11-10.20"
+  cell $eq $eq$incomplete_if.v:10$3
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 2
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 2
+    parameter \Y_WIDTH 1
+    connect \A \mode
+    connect \B 2'01
+    connect \Y $eq$incomplete_if.v:10$3_Y
+  end
+
+  attribute \src "incomplete_if.v:12.16-12.25"
+  cell $eq $eq$incomplete_if.v:12$5
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 2
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 2
+    parameter \Y_WIDTH 1
+    connect \A \mode
+    connect \B 2'10
+    connect \Y $eq$incomplete_if.v:12$5_Y
+  end
+
+  attribute \full_case 1
+  attribute \src "incomplete_if.v:10.11-10.20|incomplete_if.v:10.7-13.20"
+  cell $mux $procmux$10
+    parameter \WIDTH 4
+    connect \A $procmux$7_Y
+    connect \B $add$incomplete_if.v:11$4_Y [3:0]
+    connect \S $eq$incomplete_if.v:10$3_Y
+    connect \Y $procmux$10_Y
+  end
+
+  attribute \src "incomplete_if.v:12.16-12.25|incomplete_if.v:12.12-13.20"
+  cell $mux $procmux$7
+    parameter \WIDTH 4
+    connect \A 4'x
+    connect \B $sub$incomplete_if.v:13$6_Y [3:0]
+    connect \S $eq$incomplete_if.v:12$5_Y
+    connect \Y $procmux$7_Y
+  end
+
+  attribute \src "incomplete_if.v:13.14-13.19"
+  cell $sub $sub$incomplete_if.v:13$6
+    parameter \A_SIGNED 0
+    parameter \A_WIDTH 4
+    parameter \B_SIGNED 0
+    parameter \B_WIDTH 32
+    parameter \Y_WIDTH 32
+    connect \A \q
+    connect \B 1
+    connect \Y $sub$incomplete_if.v:13$6_Y
+  end
+end

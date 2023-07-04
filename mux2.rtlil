@@ -1,0 +1,30 @@
+
+autoidx 2
+
+attribute \dynports 1
+attribute \src "mux2.v:9.1-15.10"
+module \mux2
+
+  parameter \WIDTH 8
+
+  attribute \src "mux2.v:10.39-10.41"
+  wire width 8 input 1 \d0
+
+  attribute \src "mux2.v:10.43-10.45"
+  wire width 8 input 2 \d1
+
+  attribute \src "mux2.v:11.40-11.41"
+  wire input 3 \s
+
+  attribute \src "mux2.v:12.40-12.41"
+  wire width 8 output 4 \y
+
+  attribute \src "mux2.v:14.16-14.27"
+  cell $mux $ternary$mux2.v:14$1
+    parameter \WIDTH 8
+    connect \A \d0
+    connect \B \d1
+    connect \S \s
+    connect \Y \y
+  end
+end

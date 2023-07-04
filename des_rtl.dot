@@ -1,0 +1,12 @@
+digraph "des" {
+label="des";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="d", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="en", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="q", color="black", fontcolor="black" ];
+c7 [ shape=record, label="{{<p4> D|<p5> EN}|$5\n$dlatch|{<p6> Q}}" ];
+n1:e -> c7:p4:w [color="black", label=""];
+n2:e -> c7:p5:w [color="black", label=""];
+c7:p6:e -> n3:w [color="black", label=""];
+}
